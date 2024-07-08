@@ -1,19 +1,386 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e6f2ff;
+}
+
+/* Header Styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #003366;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 1rem;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 1.5rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffd700;
+}
+
+.login-btn {
+  background-color: #ffd700;
+  color: #003366;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 1.5rem;
+}
+
+.login-btn:hover {
+  background-color: #ffeb3b;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 300px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#loginForm {
+  display: flex;
+  flex-direction: column;
+}
+
+#loginForm label {
+  margin-top: 10px;
+}
+
+#loginForm input {
+  margin-top: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#loginForm button {
+  margin-top: 15px;
+  padding: 8px;
+  background-color: #003366;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#loginForm button:hover {
+  background-color: #002244;
+}
+/* Marquee Styles */
+
+.marquee-container {
+  width: 100%;
+  max-width: 1200px;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px 0;
+  margin-left: 70px;
+}
+
+.marquee {
+  display: flex;
+  animation: scroll 30s linear infinite;
+}
+
+.birthday-card {
+  flex: 0 0 auto;
+  width: 200px;
+  margin: 0 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.birthday-card:hover {
+  transform: translateY(-5px);
+}
+
+.birthday-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.birthday-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 5px;
+  color: #333;
+}
+
+.dept {
+  font-size: 14px;
+  font-weight: 300;
+  margin: 0;
+  color: #666;
+}
+.heading-bday{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0 0 5px;
+  color: #333;
+
+}
+@keyframes scroll {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+/* Slider Styles */
+.slider-wrapper {
+  background-color: #e6f2ff; /* Light bluish background */
+  padding: 40px 0;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px; /* Increased width */
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
 .slider {
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  .slides {
-    display: flex;
-    transition: transform 0.5s ease;
-  }
-  
-  .slide {
-    min-width: 100%;
-    transition: transform 0.5s ease;
-  }
-  
-  .slide img {
-    width: 100%;
-    display: block;
-  }
+  width: 100%;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+  width: 100%;
+  height: 600px; /* Increased height */
+  object-fit: cover;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.slider-container:hover .prev,
+.slider-container:hover .next {
+  opacity: 1;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.prev {
+  left: 20px;
+}
+
+.next {
+  right: 20px;
+}
+
+.dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  margin: 0 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  background-color: white;
+  transform: scale(1.2);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.slides img {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* =============================Retierment Section============================= */
+.retiring-employees {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.section-heading {
+  text-align: center;
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.section-heading::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #007bff;
+  margin: 10px auto 0;
+}
+
+.employee-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.employee-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.employee-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.employee-card:hover {
+  transform: translateY(-5px);
+}
+
+.employee-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.employee-card h3 {
+  font-size: 1.2em;
+  color: #333;
+  margin: 15px 0 5px;
+  padding: 0 15px;
+}
+
+.employee-card p {
+  font-size: 1em;
+  color: #666;
+  margin: 0 0 15px;
+  padding: 0 15px;
+}

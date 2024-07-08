@@ -7,14 +7,159 @@
     <title>HAL</title>
   </head>
   <body>
-    <div class="slider">
-        <div class="slides">
-          <div class="slide" id="slide1"><img src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg" alt="Image 1"></div>
-          <div class="slide" id="slide2"><img src="https://buffer.com/library/content/images/size/w1200/2023/10/free-images.jpg" alt="Image 2"></div>
-          <div class="slide" id="slide3"><img src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630" alt="Image 3"></div>
-          <!-- Add more slides as needed -->
+    <!-- Header Section -->
+    <header>
+      <div class="logo">
+        <img
+          src="https://logowik.com/content/uploads/images/hindustan-aeronautics-limited3910.jpg"
+          alt="Organization Logo"
+        />
+        <h1>HAL Division Korwa</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Language</a></li>
+          <li><a href="#">Telephone Directory</a></li>
+          <li><a href="#">Gallery</a></li>
+        </ul>
+        <button class="login-btn">Login</button>
+      </nav>
+    </header>
+
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Login</h2>
+        <form id="loginForm">
+          <label for="pbno">PB Number:</label>
+          <input type="text" id="pbno" name="pbno" required />
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Slider Section -->
+    <div class="slider-wrapper">
+      <div class="slider-container">
+        <div class="slider">
+          <div class="slides">
+            <img
+              src="https://img.freepik.com/free-photo/airplane-taking-off-sunset-scene-generative-ai_188544-8034.jpg"
+              alt="Slide 1"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1530545124313-ce5e8eae55af?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Slide 2"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1521727857535-28d2047314ac?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Slide 3"
+            />
+          </div>
+        </div>
+        <button class="prev">&lt;</button>
+        <button class="next">&gt;</button>
+        <div class="dots"></div>
+      </div>
+    </div>
+    <!-- Marquee Section -->
+    <div class="marquee-container">
+      <h2 class="heading-bday">You May Wish them Birthday Today</h2>
+      <div class="marquee">
+        <div class="birthday-card">
+          <img
+            src="https://c8.alamy.com/comp/HXE3N7/jacques-kallis-south-africa-westprovince-11-may-1999-HXE3N7.jpg"
+            alt="John Doe"
+          />
+          <div class="birthday-info">
+            <p class="name">John Doe</p>
+            <p class="dept">Department A</p>
+          </div>
+        </div>
+        <div class="birthday-card">
+          <img
+            src="https://documents.iplt20.com/playerheadshot/ipl/284/233.png"
+            alt="Jane Smith"
+          />
+          <div class="birthday-info">
+            <p class="name">Jane Smith</p>
+            <p class="dept">Department B</p>
+          </div>
+        </div>
+        <div class="birthday-card">
+          <img
+            src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_320,q_50/lsci/db/PICTURES/CMS/316400/316486.png"
+            alt="Alice Brown"
+          />
+          <div class="birthday-info">
+            <p class="name">Alice Brown</p>
+            <p class="dept">Department C</p>
+          </div>
+        </div>
+        <div class="birthday-card">
+          <img
+            src="https://static.toiimg.com/thumb/msid-111547166,width-400,resizemode-4/111547166.jpg"
+            alt="Bob White"
+          />
+          <div class="birthday-info">
+            <p class="name">Bob White</p>
+            <p class="dept">Department D</p>
+          </div>
+        </div>
+        <div class="birthday-card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp5IMvU5mzUNUAVtUPVexkzgt3cDPUE6113Q&s"
+            alt="Bob White"
+          />
+          <div class="birthday-info">
+            <p class="name">Bob White</p>
+            <p class="dept">Department D</p>
+          </div>
         </div>
       </div>
+    </div>
+
+    <!-- ==============================Retierment Section======================= -->
+    <section class="retiring-employees">
+      <h2 class="section-heading">Retiring This Month</h2>
+      <div class="employee-grid">
+        <div class="employee-card">
+          <img
+            src="https://c.ndtvimg.com/2020-04/hl52tfp8_sourav-ganguly-afp_625x300_01_April_20.jpg"
+            alt="John Smith"
+          />
+          <h3>John Smith</h3>
+          <p>Finance Department</p>
+        </div>
+        <div class="employee-card">
+          <img
+            src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_320,q_50/lsci/db/PICTURES/CMS/319900/319935.png"
+            alt="Sarah Johnson"
+          />
+          <h3>Sarah Johnson</h3>
+          <p>Human Resources</p>
+        </div>
+        <div class="employee-card">
+          <img
+            src="https://m.media-amazon.com/images/M/MV5BMjQ5OTY4MjYtMjBkNi00ZWFjLWI1YmItMTkxZTk0ODYwNDZiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_.jpg"
+            alt="Michael Brown"
+          />
+          <h3>Michael Brown</h3>
+          <p>IT Department</p>
+        </div>
+        <div class="employee-card">
+          <img
+            src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_320,q_50/lsci/db/PICTURES/CMS/319900/319953.png"
+            alt="Emily Davis"
+          />
+          <h3>Emily Davis</h3>
+          <p>Marketing</p>
+        </div>
+      </div>
+    </section>
   </body>
   <script src="script.js"></script>
 </html>
